@@ -25,8 +25,6 @@ if [ $# -ne 1 ];
         
 fi
 
-if [ "$dominio" = ]
-
 if [ "$dominio" = "$server_domain" ]
 then
     echo "domínio existe no servidor"
