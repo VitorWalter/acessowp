@@ -11,8 +11,8 @@
 
 # ------------------------------- VARIÁVEIS ----------------------------------------- #
 dominio=$1
-acesso=$(cat wp-config.php | grep "DB_NAME" | awk -F " " {'print$3'} | tr -d "'")
 raiz=$(cwd $dominio && pwd)
+acesso=$(cat $raiz/wp-config.php | grep "DB_NAME" | awk -F " " {'print$3'} | tr -d "'")
 server_domain=$(cat /etc/userdomains | grep "$dominio" | awk -F":" {'print $1'})
 # ------------------------------------------------------------------------ #
 
