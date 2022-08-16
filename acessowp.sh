@@ -30,7 +30,7 @@ fi
 if [ "$dominio" = "$server_domain" ]
 then
     echo "domínio existe no servidor"
-    $raiz
+    cwd $dominio
     pwtemp setwp $acesso
 else
     echo "domínio não existe no servidor"
