@@ -17,7 +17,7 @@ server_domain=$(cat /etc/userdomains | grep "$dominio" | awk -F":" {'print $1'})
 # ------------------------------------------------------------------------ #
 
 # ------------------------------- TESTES ----------------------------------------- #
-if[ $# -ne 1 ];
+if [ $# -ne 1 ];
     then
         echo "sintase incorreta. 
         Digite a seguinte sintase acessowp.sh <dominio>" 
